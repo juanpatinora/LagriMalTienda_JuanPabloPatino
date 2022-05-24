@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Navbar, Nav, Container, Row } from "react-bootstrap";
 import CartWidget from "./CartWidget";
 import ItemListContainer from "./ItemListContainer";
+import ItemCount from "./ItemCount";
 
 export default class NavbarComp extends Component {
   render() {
@@ -23,6 +24,7 @@ export default class NavbarComp extends Component {
           </Container>
         </Navbar>
         <ItemListContainer greeting="Hello, React" />
+        <ItemCount stock={20} initial={5}></ItemCount>
       </div>
     );
   }
